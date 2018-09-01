@@ -19,7 +19,9 @@
         <activity android:name=".DetectObject" />
         <activity android:name=".FindObject" />
         <activity android:name=".Ocr" />
-        <activity android:name=".Emergency"></activity>
+        <activity android:name=".Emergency" />
+        <activity android:name=".TextToSpeechOCR">
+        </activity>
     </application>
 
 </manifest>
