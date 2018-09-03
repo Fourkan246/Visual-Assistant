@@ -17,16 +17,7 @@
         android:background="#82D5EA"
         android:hint="What do you want to find...?" />
 
-    <TextView
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:text="Type by voice"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:background="#82D5EA"
-        android:gravity="center"
-        />
+
 
     <ImageView
         android:id="@+id/btnSpeak"

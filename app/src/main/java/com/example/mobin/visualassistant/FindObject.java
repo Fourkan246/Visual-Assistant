@@ -2,8 +2,10 @@ package com.example.mobin.visualassistant;
 
 import android.content.Intent;
 import android.speech.RecognizerIntent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,6 +18,7 @@ public class FindObject extends AppCompatActivity {
 
     private TextView txtResult;
     private ImageView btnSpeak;
+    private TextToSpeech mTTS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,26 @@ public class FindObject extends AppCompatActivity {
                 getSpeechInput(view);
             }
         });
+
+
+        mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status == TextToSpeech.SUCCESS) {
+                    int result = mTTS.setLanguage(Locale.GERMAN);
+
+                    if (result == TextToSpeech.LANG_MISSING_DATA
+                            || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                        Log.e("TTS", "Language not supported");
+                    } else {
+                        //mButtonSpeak.setEnabled(true);
+                    }
+                } else {
+                    Log.e("TTS", "Initialization failed");
+                }
+            }
+        });
+
     }
 
     public void getSpeechInput(View view){
@@ -53,7 +76,32 @@ public class FindObject extends AppCompatActivity {
             if(resultCode == RESULT_OK && data != null){
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 txtResult.setText(result.get(0));
+                /// text speak
+                speak(result.get(0));
             }
         }
     }
+
+
+    private void speak(String text) {
+
+        float pitch = (float) 1.00;
+        float speed = (float) 0.65;
+
+        mTTS.setPitch(pitch);
+        mTTS.setSpeechRate(speed);
+
+        mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (mTTS != null) {
+            mTTS.stop();
+            mTTS.shutdown();
+        }
+
+        super.onDestroy();
+    }
+
 }
