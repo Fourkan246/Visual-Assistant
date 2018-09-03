@@ -11,12 +11,11 @@
 
 
     <EditText
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="#82D5EA"
-        android:hint="What do you want to find...?"
-
-        />
+        android:hint="What do you want to find...?" />
 
     <TextView
         android:layout_marginTop="30dp"
@@ -29,7 +28,9 @@
         android:gravity="center"
         />
 
-    <Button
+    <ImageView
+        android:id="@+id/btnSpeak"
+        android:src="@drawable/ic_mic"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="120dp"
