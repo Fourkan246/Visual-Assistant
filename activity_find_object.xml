@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#BCCFD5"
+    tools:context=".FindObject">
+
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#82D5EA"
+        android:hint="What do you want to find...?" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Type by voice"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#82D5EA"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/btnSpeak"
+        android:src="@drawable/ic_mic"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Start Finding"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#82D5EA"
+        />
+</LinearLayout>
