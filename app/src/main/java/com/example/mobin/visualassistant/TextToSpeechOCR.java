@@ -24,6 +24,8 @@ public class TextToSpeechOCR extends AppCompatActivity {
 
         mButtonSpeak = findViewById(R.id.button_speak);
 
+
+
         mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -45,6 +47,10 @@ public class TextToSpeechOCR extends AppCompatActivity {
         mEditText = findViewById(R.id.edit_text);
         mSeekBarPitch = findViewById(R.id.seek_bar_pitch);
         mSeekBarSpeed = findViewById(R.id.seek_bar_speed);
+
+
+        String lol = getIntent().getStringExtra("reqd");
+        mEditText.setText(lol);
 
         mButtonSpeak.setOnClickListener(new View.OnClickListener() {
             @Override

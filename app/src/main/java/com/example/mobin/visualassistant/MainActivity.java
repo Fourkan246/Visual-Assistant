@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Ocr.class);
+                Intent i = new Intent(getApplicationContext(), Ocr_read.class);
                 startActivity(i);
             }
         });
