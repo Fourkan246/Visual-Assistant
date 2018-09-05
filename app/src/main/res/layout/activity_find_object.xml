@@ -30,4 +30,14 @@
         android:textStyle="bold"
         android:background="#82D5EA"
         />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/finding"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#82D5EF"
+        android:text="Start Finding"
+        android:textSize="30dp"
+        />
 </LinearLayout>

@@ -1,12 +1,14 @@
 package com.example.mobin.visualassistant;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.provider.MediaStore;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +21,7 @@ public class FindObject extends AppCompatActivity {
     private TextView txtResult;
     private ImageView btnSpeak;
     private TextToSpeech mTTS;
+    Button find;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,7 @@ public class FindObject extends AppCompatActivity {
         setContentView(R.layout.activity_find_object);
         txtResult = findViewById(R.id.txtResult);
         btnSpeak = findViewById(R.id.btnSpeak);
-
+        find = findViewById(R.id.finding);
         btnSpeak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +53,14 @@ public class FindObject extends AppCompatActivity {
                 } else {
                     Log.e("TTS", "Initialization failed");
                 }
+            }
+        });
+
+        find.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Intent3=new   Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+                startActivity(Intent3);
             }
         });
 
