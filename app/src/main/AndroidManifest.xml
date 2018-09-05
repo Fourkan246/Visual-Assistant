@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mobin.visualassistant">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,12 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
         <activity android:name=".DetectObject" />
         <activity android:name=".FindObject" />
-        <activity android:name=".Ocr" />
         <activity android:name=".Emergency" />
-        <activity android:name=".TextToSpeechOCR">
-        </activity>
+        <activity android:name=".TextToSpeechOCR"></activity>
+        <activity android:name=".Ocr_read"></activity>
     </application>
 
 </manifest>
