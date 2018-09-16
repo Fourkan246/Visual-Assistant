@@ -2,10 +2,11 @@ package com.example.mobin.visualassistant;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import org.tensorflow.yolo.view.ClassifierActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
         btnDetect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Intent3=new   Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+                Intent Intent3=new Intent(getApplicationContext(),ClassifierActivity.class);
                 startActivity(Intent3);
- //               Intent i = new Intent(getApplicationContext(), DetectObject.class);
+
+
+
+                //               Intent i = new Intent(getApplicationContext(), DetectObject.class);
  //               startActivity(i);
             }
         });
