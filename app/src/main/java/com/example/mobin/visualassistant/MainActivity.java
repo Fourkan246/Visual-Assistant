@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Intent3);
 
 
-
-                //               Intent i = new Intent(getApplicationContext(), DetectObject.class);
- //               startActivity(i);
             }
         });
 
