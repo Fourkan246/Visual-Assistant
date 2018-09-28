@@ -32,6 +32,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //adding library here
-    compile 'com.google.android.gms:play-services-vision:11.4.0+'
-    compile project(path: ':android-yolo-v2')
+    implementation 'com.google.android.gms:play-services-vision:11.4.0+'
+    implementation project(path: ':android-yolo-v2')
 }
