@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tensorflow.yolo">
+
+
+
+    <application>
+
+        <activity android:name="org.tensorflow.yolo.view.ClassifierActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_name_classification">
+        </activity>
+    </application>
+
+</manifest>

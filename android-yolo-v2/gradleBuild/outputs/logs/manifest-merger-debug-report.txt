@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:3:1-16:12
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:3:1-16:12
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:3:1-16:12
+	package
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:4:5-34
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:3:11-69
+application
+ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:8:5-14:19
+activity#org.tensorflow.yolo.view.ClassifierActivity
+ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:10:9-13:20
+	android:screenOrientation
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:11:19-55
+	android:label
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:12:19-71
+	android:name
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml:10:19-77
+uses-sdk
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+		ADDED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
+		INJECTED from F:\Android projects\VisualAssistant\android-yolo-v2\AndroidManifest.xml
